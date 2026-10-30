@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Explorer</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <h1>Game Explorer</h1>
+
+    <p>Explore seus jogos favoritos!</p>
+    <p>Encontre informações sobre milhares de jogos.</p>
+
+    <div class="pesquisa">
+        <input
+            type="text"
+            id="nomeJogo"
+            placeholder="Digite o nome de um jogo"
+        >
+
+        <button id="btnPesquisar">Pesquisar</button>
+        <label for="filtroAvaliacao">Filtrar por avaliação:</label>
+        <select id="filtroAvaliacao">
+            <option value="0">Todos</option>
+            <option value="1">1 estrela</option>
+            <option value="2">2 estrelas</option>
+            <option value="3">3 estrelas</option>
+            <option value="4">4 estrelas ou mais</option>
+        </select>
+    </div>
+
+    <section class="secao-jogos">
+    <h2 id="tituloSecao">🔥 Jogos em destaque</h2>
+    <div id="resultado"></div>
+    </section>
+    <div id="modal" class="modal">
+    <div class="modal-conteudo">
+        <button id="fecharModal">✕</button>
+        <div id="detalhesJogo"></div>
+    </div>
+
+
+<script src="/js/script.js"></script>
+</body>
+</html>
